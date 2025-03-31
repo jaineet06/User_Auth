@@ -28,7 +28,7 @@ const register = async (req, res) => {
         const options = {
             httpOnly: true, 
             secure: process.env.MODE === 'production',
-            sameSite: process.env.MODE === 'production' ? none : true,
+            sameSite: process.env.MODE === 'production' ? 'none' : true,
             maxAge: 7 * 24 * 60 * 60 * 1000
         }
 
@@ -76,7 +76,7 @@ const login = async (req, res) => {
         const options = {
             httpOnly: true, 
             secure: process.env.MODE === 'production',
-            sameSite: process.env.MODE === 'production' ? none : true,
+            sameSite: process.env.MODE === 'production' ? 'none' : true,
             maxAge: 7 * 24 * 60 * 60 * 1000
         }
 
@@ -96,7 +96,7 @@ const logout = async (req, res) => {
         res.clearCookie('token', {
             httpOnly: true, 
             secure: process.env.MODE === 'production',
-            sameSite: process.env.MODE === 'production' ? none : true,
+            sameSite: process.env.MODE === 'production' ? 'none' : true,
         })
 
         return res.json({success: true,  message: "Logout Succesfully!"})
