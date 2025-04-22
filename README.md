@@ -41,6 +41,23 @@ A full-featured authentication system built with the MERN stack that includes:
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](./screenshots/Landing_Page.png)
+
+### 📦 Register user Page
+![Register user](./screenshots/Register.png)
+
+### 🛒 Login user Page
+![Login user](./screenshots/Login.png)
+
+### 🔐 Password reset 
+![Reset password](./screenshots/Reset_password_OTP.png)
+
+### 🔐 Email verification 
+![Email verification](./screenshots/Reset_password_OTP.png)
+
 
 ## Installation
 
